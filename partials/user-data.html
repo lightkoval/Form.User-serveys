@@ -1,0 +1,16 @@
+<div class="user-data">
+    <div class="data">
+        <p class="user-name">{{user.name}}</p>
+        <p class="user-email">{{user.email}}</p>
+        <p class="user-country">{{user.city}}, {{user.country}}</p>
+        <ul class="user-social">
+            <li ng-repeat="(key,item) in user.social">
+                {{key}}: <span>{{item}}</span>
+            </li>
+        </ul>
+    </div>
+    <div class="user-img" ng-style="{'background' : 'url({{user.img}})',  'background-size': 'auto 195px'}"></div>
+</div>
+<div class="start-over">
+    <a href="#first" class="button-complete">Пройти заново</a>
+</div>

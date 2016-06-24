@@ -1,0 +1,377 @@
+body {
+    background: #f5f5f5;
+    font-family: 'Open sans';
+    font-size: 15px;
+}
+
+p {
+    margin: 0;
+}
+
+/* Header */
+header {
+    width: 300px;
+    height: 34px;
+    margin: 50px auto 0;
+
+}
+
+header > ul {
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 2px 0;
+}
+
+header > ul > li {
+    float: left;
+    height: 30px;
+    width: 30px;
+    margin: 2px 10px 2px 0;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    background: #ffffff;
+    text-align: center;
+}
+
+header > ul >li > a {
+    width: 100%;
+    text-decoration: none;
+    color: #bbbbbb;
+    line-height: 30px;
+    display: inline-block;
+}
+
+.filled {
+    color: #ff9800;
+}
+
+.active {
+    color: #000;
+}
+
+
+main {
+    width: 300px;
+    margin: 0 auto;
+}
+
+h2 {
+    font: 100 15px 'Open sans';
+    margin: 16px 0 40px;
+}
+
+.form > p {
+    margin: 16px 0;
+}
+
+.form input.ng-invalid.ng-touched {
+    border: 1px solid #ff0000;
+}
+
+.error {
+    color: #ff0000;
+    font-size: 15px;
+    display: block;
+    padding-top: 5px;
+}
+
+input[type="text"], input[type="email"], select {
+    width: 260px;
+    height: 40px;
+    padding: 0 10px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    outline: none;
+    border: none;
+}
+
+.pagination {
+    margin: 150px 0 50px;
+}
+
+.button {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    color: #ff9800;
+    background: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    height: 30px;
+    padding: 5px 10px;
+    margin-right: 16px;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    background: #fff;
+    color: #ff9800;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    height: 30px;
+    padding: 0 10px;
+}
+
+.button-complete {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    background: #ff9800;
+    text-decoration: none;
+    font-size: 15px;
+    height: 30px;
+    padding: 5px 10px;
+}
+
+
+.social {
+    height: auto;
+    width: 450px;
+    margin: 16px 0;
+    overflow: hidden;
+}
+
+.checkbox {
+    height: 40px;
+    float: left;
+    width: 150px;
+    line-height: 40px;
+}
+
+.social-input {
+    width: 300px;
+    float: left;
+}
+
+.fourth {
+    width: 300px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.img-list {
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    margin-left: -300px;
+    width: 670px;
+}
+.margin {
+    margin-top: 300px;
+}
+
+.img {
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.img1 {
+    background: url("../img/cat1.jpg") no-repeat center center;
+    background-size: auto 150px;
+}
+
+.img2 {
+    background: url("../img/cat2.jpg") no-repeat center center;
+    background-size: auto 150px;
+}
+
+.img3 {
+    background: url("../img/cat3.jpg") no-repeat center center;
+    background-size: auto 150px;
+}
+
+.img4 {
+    background: url("../img/dog4.jpg") no-repeat center center;
+    background-size: auto 150px;
+}
+
+.border {
+     border: 2px solid #ff9800;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+ }
+
+.user-data {
+    width: 500px;
+    background: #fff;
+    padding: 24px;
+    margin: 100px auto 0;
+    overflow: hidden;
+}
+
+.data {
+    width: 300px;
+    height: 195px;
+    float: left;
+    position: relative;
+}
+.user-name {
+    font-size: 20px;
+}
+
+.user-email,
+.user-country {
+    font-size: 15px;
+    padding-bottom: 30px;
+    color: #bbbbbb;
+}
+.user-social {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+}
+.user-social li{
+    font-size: 15px;
+    color: blue;
+    list-style: none;
+}
+
+.user-social li span{
+    font-size: 15px;
+    color: #bbbbbb;
+}
+
+.user-img {
+    float: left;
+    width: 200px;
+    height: 195px;
+}
+
+.start-over {
+    width: 200px;
+    margin: 24px auto;
+}
+
+@media screen and (max-width: 769px) {
+
+    header {
+        width: 400px;
+        height: 34px;
+        margin: 50px auto 0;
+
+    }
+
+    main {
+        width: 400px;
+        margin: 0 auto;
+    }
+
+
+
+    .social {
+        height: auto;
+        width: 400px;
+        margin: 16px 0;
+        overflow: hidden;
+    }
+
+    .checkbox {
+        height: 40px;
+        float: left;
+        width: 150px;
+        line-height: 40px;
+    }
+
+    .social-input {
+        width: 300px;
+        float: left;
+    }
+
+    .fourth {
+        width: 400px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .img-list {
+        overflow: hidden;
+        position: static;
+        left: 0;
+        margin-left: 0;
+        width: 400px;
+    }
+    .margin {
+        margin: 50px 0;
+    }
+
+    .img {
+        float: left;
+        width: 150px;
+        height: 150px;
+        margin: 16px 16px 16px 0;
+        cursor: pointer;
+    }
+
+
+
+}
+
+@media screen and (max-width: 436px) {
+
+    .social {
+        width: 300px;
+    }
+
+    .fourth {
+        width: 300px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .img-list {
+        overflow: hidden;
+        position: static;
+        left: 0;
+        margin-left: 0;
+        width: 300px;
+    }
+    .margin {
+        margin: 50px 0;
+    }
+
+    .img {
+        float: none;
+        width: 150px;
+        height: 150px;
+        margin: 16px auto;
+    }
+
+
+    .user-data {
+        width: 200px;
+        margin: 30px auto;
+    }
+
+    .data {
+        width: 200px;
+        margin-bottom: 24px;
+    }
+
+}

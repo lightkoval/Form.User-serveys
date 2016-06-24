@@ -1,0 +1,64 @@
+<header>
+    <ul>
+        <li><a href="#first" ng-class="{active: isActive('/first'), filled: filled.first}">1</a></li>
+        <li><a href="#second" ng-class="{active: isActive('/second'), filled: filled.second}">2</a></li>
+        <li><a href="#third" ng-class="{active: isActive('/third'), filled: filled.third}">3</a></li>
+        <li><a href="" ng-class="{active: isActive('/fourth'), filled: filled.fourth}">4</a></li>
+    </ul>
+</header>
+<main>
+    <h2>3. Отметьте сoциальные сети</h2>
+
+    <form name="loginForm" novalidate ng-submit="submit()" class="form">
+        <div class="social">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" ng-model="Facebook"/>
+                    Facebook </label>
+            </div>
+            <div class="social-input">
+                <input type="text" ng-model="user.Facebook" placeholder="Ваша страница в Facebook" ng-show="Facebook"/>
+            </div>
+        </div>
+
+        <div class="social">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" ng-model="Vkontakte"/>
+                    Вконтакте </label>
+            </div>
+            <div class="social-input">
+                <input type="text" ng-model="user.Vkontakte" placeholder="Ваша страница в Vkontakte"
+                       ng-show="Vkontakte"/>
+            </div>
+        </div>
+
+        <div class="social">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" ng-model="Twitter"/>
+                    Twitter </label>
+            </div>
+            <div class="social-input">
+                <input type="text" ng-model="user.Twitter" placeholder="Ваша страница в Twitter" ng-show="Twitter"/>
+            </div>
+        </div>
+
+        <div class="social">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" ng-model="Odnoklassniki"/>
+                    Одноклассники </label>
+            </div>
+            <div class="social-input">
+                <input type="text" ng-model="user.Odnoklassniki" placeholder="Ваша страница в Odnoklassniki"
+                       ng-show="Odnoklassniki"/>
+            </div>
+        </div>
+
+        <div class="pagination">
+            <a href="#second" class="button">&#60;&#160; Предыдущий</a>
+            <input type="submit" class="btn" value="Следующий &#160; &#62;">
+        </div>
+    </form>
+</main>

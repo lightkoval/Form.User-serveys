@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <title></title>
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-route/angular-route.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/route.js"></script>
+    <script src="js/directives.js"></script>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body ng-controller="HomeController">
+<!--    <header>
+        <ul>
+            <li><a href="#first"  ng-class="{active: isActive('/first'), filled: filled.first}">1</a></li>
+            <li><a href="#second" ng-class="{active: isActive('/second'), filled: filled.second}">2</a></li>
+            <li><a href="#third"  ng-class="{active: isActive('/third'), filled: filled.third}">3</a></li>
+            <li><a href="#fourth" ng-class="{active: isActive('/fourth'), filled: filled.fourth}">4</a></li>
+        </ul>
+    </header>-->
+
+    <div ng-view></div>
+</body>
+</html>

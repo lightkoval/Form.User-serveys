@@ -1,0 +1,34 @@
+<header>
+    <ul>
+        <li><a href="#first" ng-class="{active: isActive('/first'), filled: filled.first}">1</a></li>
+        <li><a href="" ng-class="{active: isActive('/second'), filled: filled.second}">2</a></li>
+        <li><a href="" ng-class="{active: isActive('/third'), filled: filled.third}">3</a></li>
+        <li><a href="" ng-class="{active: isActive('/fourth'), filled: filled.fourth}">4</a></li>
+    </ul>
+</header>
+<main>
+    <h2>1. Введите имя и e-mail</h2>
+
+    <form name="loginForm" novalidate ng-submit="submit()" class="form">
+        <p>
+            <input type="text" name="name" placeholder="Имя" ng-model="user.name" required/>
+            <span ng-show="(loginForm.name.$dirty || submitted) && loginForm.name.$error.required" class="error">
+                поле обязательно для заполнения
+            </span>
+        </p>
+
+        <p>
+            <input type="email" name="email" placeholder="e-mail" ng-model="user.email" required/>
+            <span ng-show="loginForm.email.$error.email" class="error">
+                в адресе должен быть символ "@"
+            </span>
+        </p>
+
+
+        <div class="pagination">
+            <a href="#" class="button">&#60;&#160; Предыдущий</a>
+            <input type="submit" class="btn" value="Следующий &#160; &#62;">
+        </div>
+
+    </form>
+</main>

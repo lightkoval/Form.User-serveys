@@ -1,0 +1,24 @@
+<header>
+    <ul>
+        <li><a href="#first"  ng-class="{active: isActive('/first'), filled: filled.first}">1</a></li>
+        <li><a href="#second" ng-class="{active: isActive('/second'), filled: filled.second}">2</a></li>
+        <li><a href="#third"  ng-class="{active: isActive('/third'), filled: filled.third}">3</a></li>
+        <li><a href="#fourth" ng-class="{active: isActive('/fourth'), filled: filled.fourth}">4</a></li>
+    </ul>
+</header>
+
+<main class="fourth">
+    <h2>4. Выберите любимого котика</h2>
+    <div class="img-list">
+        <div class="img img1" ng-click="saveImg('img/cat1.jpg')" ng-class="{border: active.img1}"></div>
+        <div class="img img2"  ng-click="saveImg('img/cat2.jpg')" ng-class="{border: active.img2}"></div>
+        <div class="img img3" ng-click="saveImg('img/cat3.jpg')" ng-class="{border: active.img3}"></div>
+        <div class="img img4" ng-click="saveImg('img/dog4.jpg')" ng-class="{border: active.img4}"></div>
+        <div ng-show="active.img4" class="error">Вы выбрали собачку. А надо котика.</div>
+    </div>
+
+    <div class="pagination margin">
+        <a href="#third" class="button">&#60;&#160; Предыдущий</a>
+        <a href="#user-data" class="button-complete">Завершить</a>
+    </div>
+</main>

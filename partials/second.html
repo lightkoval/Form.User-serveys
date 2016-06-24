@@ -1,0 +1,46 @@
+<header>
+    <ul>
+        <li><a href="#first"  ng-class="{active: isActive('/first'), filled: filled.first}">1</a></li>
+        <li><a href="#second" ng-class="{active: isActive('/second'), filled: filled.second}">2</a></li>
+        <li><a href=""  ng-class="{active: isActive('/third'), filled: filled.third}">3</a></li>
+        <li><a href="" ng-class="{active: isActive('/fourth'), filled: filled.fourth}">4</a></li>
+    </ul>
+</header>
+<main>
+    <h2>2. Выберите страну и город</h2>
+    <form name="locationForm" novalidate ng-submit="submit()" class="form">
+
+<!--        <p>
+            <input type="text" name="country" list="countries" placeholder="Страна" ng-model="user.country" />
+            <datalist id="countries" >
+                <option ng-repeat="(key, country) in countries" value="{{country}}" ng-model-options="">
+            </datalist>
+        </p>
+
+       <p>
+           <input type="text" name="city" list="cities" placeholder="Город" ng-model="user.city"/>
+           <datalist id="cities">
+               <option ng-repeat="city in cities" value={{city}}>
+           </datalist>
+       </p>-->
+
+        <p>
+            <select ng-model="country" ng-options="key as country for (key, country) in countries" ng-change="saveCountry()">
+                <option value="">Страна</option>
+            </select>
+        </p>
+
+        <p>
+            <select ng-model="city" ng-options="city as city.name  for city in citiesList" >
+                <option value="">Город</option>
+            </select>
+        </p>
+
+        <div class="pagination">
+            <a href="#first" class="button">&#60;&#160; Предыдущий</a>
+            <input type="submit"  class="btn" value="Следующий &#160; &#62;">
+        </div>
+
+    </form>
+
+</main>
